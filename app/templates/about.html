@@ -1,7 +1,52 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>About</h1>
-<br>
-<p>This website is designed to display example data tables using Pandas and Flask operations. Users can perform basic CRUD operations to add, manipulate, and sort records. A calculation of average points per player will also be available.</p>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body p-5">
+                    <h1 class="text-center mb-4" style="color: var(--primary-green);">
+                        <i class="fas fa-golf-ball me-2"></i>About Eagle Pro Golf
+                    </h1>
+                    
+                    <p class="lead text-center mb-4">Your premier destination for booking Georgia's finest golf courses.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 style="color: var(--primary-green);">Our Mission</h4>
+                            <p>Eagle Pro Golf connects golf enthusiasts with Georgia's most prestigious and beautiful golf courses. We make it easy to discover, compare, and book tee times at world-class facilities.</p>
+                            
+                            <h4 style="color: var(--primary-green);">What We Offer</h4>
+                            <ul>
+                                <li>Premium course reservations</li>
+                                <li>Championship golf experiences</li>
+                                <li>Group and tournament bookings</li>
+                                <li>Exclusive access to private clubs</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 style="color: var(--primary-green);">Featured Destinations</h4>
+                            <p>From the legendary Augusta National to the coastal beauty of Sea Island, we provide access to Georgia's most sought-after golf destinations.</p>
+                            
+                            <h4 style="color: var(--primary-green);">Why Choose Us</h4>
+                            <ul>
+                                <li>Instant booking confirmation</li>
+                                <li>Best available rates</li>
+                                <li>Expert course knowledge</li>
+                                <li>Exceptional customer service</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <a href="{{ url_for('index') }}#golf-courses" class="btn btn-primary btn-lg">
+                            <i class="fas fa-golf-ball me-2"></i>Book Your Round Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

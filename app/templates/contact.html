@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center mb-4" style="color: var(--primary-green);">
+        <i class="fas fa-phone me-2"></i>Contact Eagle Pro Golf
+    </h1>
+    <p class="lead text-center mb-5">Get in touch with our golf professionals and reservation specialists</p>
+    
+    <div class="row">
+        <!-- Contact Information -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body p-4">
+                    <h3 class="mb-4" style="color: var(--primary-green);">
+                        <i class="fas fa-info-circle me-2"></i>Contact Information
+                    </h3>
+                    
+                    <div class="mb-4">
+                        <h5 style="color: var(--primary-green);">Reservations Office</h5>
+                        <p class="mb-2"><i class="fas fa-phone me-2" style="color: var(--primary-green);"></i>(770) 555-GOLF (4653)</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2" style="color: var(--primary-green);"></i>reservations@eagleprogolf.com</p>
+                        <p class="mb-0"><i class="fas fa-clock me-2" style="color: var(--primary-green);"></i>Mon-Sun: 6:00 AM - 8:00 PM</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 style="color: var(--primary-green);">Pro Shop & Lessons</h5>
+                        <p class="mb-2"><i class="fas fa-phone me-2" style="color: var(--primary-green);"></i>(770) 555-PROS (7767)</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2" style="color: var(--primary-green);"></i>proshop@eagleprogolf.com</p>
+                        <p class="mb-0"><i class="fas fa-clock me-2" style="color: var(--primary-green);"></i>Mon-Sun: 7:00 AM - 6:00 PM</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 style="color: var(--primary-green);">Corporate Events</h5>
+                        <p class="mb-2"><i class="fas fa-phone me-2" style="color: var(--primary-green);"></i>(770) 555-CORP (2677)</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2" style="color: var(--primary-green);"></i>events@eagleprogolf.com</p>
+                        <p class="mb-0"><i class="fas fa-clock me-2" style="color: var(--primary-green);"></i>Mon-Fri: 8:00 AM - 5:00 PM</p>
+                    </div>
+                    
+                    <div>
+                        <h5 style="color: var(--primary-green);">Main Office</h5>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2" style="color: var(--primary-green);"></i>1234 Golf Club Drive<br>Atlanta, GA 30309</p>
+                        <p class="mb-0"><i class="fas fa-fax me-2" style="color: var(--primary-green);"></i>Fax: (770) 555-0199</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body p-4">
+                    <h3 class="mb-4" style="color: var(--primary-green);">
+                        <i class="fas fa-envelope me-2"></i>Send Us a Message
+                    </h3>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="contactPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="contactPhone">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="inquiryType" class="form-label">Inquiry Type</label>
+                            <select class="form-control" id="inquiryType" required>
+                                <option value="">Select inquiry type...</option>
+                                <option value="reservations">Tee Time Reservations</option>
+                                <option value="events">Corporate Events</option>
+                                <option value="lessons">Golf Lessons</option>
+                                <option value="membership">Membership Information</option>
+                                <option value="general">General Information</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" placeholder="Please provide details about your inquiry..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Golf Professionals -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3 class="text-center mb-4" style="color: var(--primary-green);">
+                <i class="fas fa-user-tie me-2"></i>Meet Our Golf Professionals
+            </h3>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="rounded-circle bg-primary d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: var(--primary-green) !important;">
+                        <i class="fas fa-user fa-2x text-white"></i>
+                    </div>
+                    <h5 class="mt-3" style="color: var(--primary-green);">Ethan Wells</h5>
+                    <p class="text-muted">Head Golf Professional</p>
+                    <p class="small">PGA Professional with 15 years experience. Specializes in course management and tournament play.</p>
+                    <p class="mb-0"><i class="fas fa-phone me-1"></i>(770) 555-0101</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="rounded-circle bg-primary d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: var(--secondary-green) !important;">
+                        <i class="fas fa-user fa-2x text-white"></i>
+                    </div>
+                    <h5 class="mt-3" style="color: var(--primary-green);">Cullen Joiner</h5>
+                    <p class="text-muted">Teaching Professional</p>
+                    <p class="small">PGA certified instructor focusing on beginner and junior golf programs. Available for private lessons.</p>
+                    <p class="mb-0"><i class="fas fa-phone me-1"></i>(770) 555-0102</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="rounded-circle bg-primary d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: var(--accent-yellow) !important;">
+                        <i class="fas fa-user fa-2x text-dark"></i>
+                    </div>
+                    <h5 class="mt-3" style="color: var(--primary-green);">David Chen</h5>
+                    <p class="text-muted">Event Coordinator</p>
+                    <p class="small">Specializes in corporate tournaments and special events. Expert in group bookings and hospitality.</p>
+                    <p class="mb-0"><i class="fas fa-phone me-1"></i>(770) 555-0103</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

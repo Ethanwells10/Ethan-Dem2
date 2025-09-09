@@ -1,6 +1,6 @@
 # Database Setup
 
-This directory contains the database structure and sample data for the Flask starter kit.
+This directory contains the database structure and sample data for Eagle Pro.
 
 ## Files
 

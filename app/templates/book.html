@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body p-5">
+                    <h1 class="text-center mb-4" style="color: var(--primary-green);">
+                        <i class="fas fa-calendar-check me-2"></i>Book Your Tee Time
+                    </h1>
+                    <p class="lead text-center mb-4">Reserve your spot at Georgia's premier golf courses</p>
+                    
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="golfCourse" class="form-label">Select Golf Course</label>
+                                <select class="form-control" id="golfCourse" required>
+                                    <option value="">Choose a course...</option>
+                                    <option value="augusta">Augusta National Golf Club</option>
+                                    <option value="sea-island">Sea Island Golf Club</option>
+                                    <option value="east-lake">East Lake Golf Club</option>
+                                    <option value="lanier">Lanier Islands Golf Course</option>
+                                    <option value="peachtree">Peachtree Golf Club</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="playDate" class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" id="playDate" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="teeTime" class="form-label">Preferred Tee Time</label>
+                                <select class="form-control" id="teeTime" required>
+                                    <option value="">Select time...</option>
+                                    <option value="0700">7:00 AM</option>
+                                    <option value="0730">7:30 AM</option>
+                                    <option value="0800">8:00 AM</option>
+                                    <option value="0830">8:30 AM</option>
+                                    <option value="0900">9:00 AM</option>
+                                    <option value="0930">9:30 AM</option>
+                                    <option value="1000">10:00 AM</option>
+                                    <option value="1030">10:30 AM</option>
+                                    <option value="1100">11:00 AM</option>
+                                    <option value="1130">11:30 AM</option>
+                                    <option value="1200">12:00 PM</option>
+                                    <option value="1230">12:30 PM</option>
+                                    <option value="1300">1:00 PM</option>
+                                    <option value="1330">1:30 PM</option>
+                                    <option value="1400">2:00 PM</option>
+                                    <option value="1430">2:30 PM</option>
+                                    <option value="1500">3:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="players" class="form-label">Number of Players</label>
+                                <select class="form-control" id="players" required>
+                                    <option value="">Select players...</option>
+                                    <option value="1">1 Player</option>
+                                    <option value="2">2 Players</option>
+                                    <option value="3">3 Players</option>
+                                    <option value="4">4 Players</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="playerName" class="form-label">Primary Player Name</label>
+                                <input type="text" class="form-control" id="playerName" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="(555) 123-4567" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="handicap" class="form-label">Handicap (Optional)</label>
+                                <input type="number" class="form-control" id="handicap" placeholder="Enter handicap" min="0" max="54">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="specialRequests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="specialRequests" rows="3" placeholder="Cart rental, club rental, dining reservations, etc."></textarea>
+                        </div>
+                        
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Booking Policy:</strong> All reservations require a credit card to hold your tee time. Cancellations must be made 24 hours in advance to avoid charges.
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">
+                                <i class="fas fa-golf-ball me-2"></i>Reserve Tee Time
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

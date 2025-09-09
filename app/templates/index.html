@@ -5,46 +5,152 @@
 <div class="text-center">
     <div class="card shadow-lg p-5 mb-5">
         <h1 class="display-4 mb-3">
-            <i class="fas fa-graduation-cap me-3"></i>Georgia College & State University
+            <i class="fas fa-golf-ball me-3"></i>Eagle Pro Golf
         </h1>
-        <h2 class="h3 text-muted mb-4">MIS Flask Starter Kit</h2>
+        <h2 class="h3 text-muted mb-4">Premier Golf Course Reservations</h2>
         
-        <p class="lead mb-4">Welcome to GCSU's Flask development environment! This starter kit provides a foundation for building web applications using Python and Flask.</p>
+        <p class="lead mb-4">Book your perfect round at Georgia's most prestigious golf courses. From Augusta National to coastal Sea Island, we connect you with unforgettable golf experiences.</p>
         
         <div class="row justify-content-center mb-4">
             <div class="col-md-10">
-                <p class="mb-0">Georgia College & State University, located in Milledgeville, Georgia, is a public liberal arts university known for its commitment to undergraduate education and student success. Our MIS program prepares students with practical skills in software development, data analysis, and modern web technologies for business applications.</p>
+                <p class="mb-0">Eagle Pro Golf is your gateway to Georgia's finest golf courses. Whether you're seeking championship-level challenges or scenic lakefront rounds, we make booking your ideal golf experience simple and seamless.</p>
             </div>
         </div>
         
         <div class="row justify-content-center">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-4 mb-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <i class="fas fa-code fa-3x mb-3" style="color: var(--gcsu-blue);"></i>
-                        <h5 class="card-title">Modern Development</h5>
-                        <p class="card-text">Built with Flask, Bootstrap, and modern web technologies for responsive design.</p>
+                        <i class="fas fa-calendar-check fa-3x mb-3" style="color: var(--primary-green);"></i>
+                        <h5 class="card-title">Easy Booking</h5>
+                        <p class="card-text">Reserve your tee times instantly with our streamlined booking system.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-3">
+            <div class="col-md-4 mb-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <i class="fas fa-database fa-3x mb-3" style="color: var(--gcsu-green);"></i>
-                        <h5 class="card-title">Database Ready</h5>
-                        <p class="card-text">Pre-configured for MySQL/PostgreSQL with example CRUD operations.</p>
+                        <i class="fas fa-trophy fa-3x mb-3" style="color: var(--accent-yellow);"></i>
+                        <h5 class="card-title">Premium Courses</h5>
+                        <p class="card-text">Access to Georgia's most exclusive and championship golf courses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x mb-3" style="color: var(--primary-green);"></i>
+                        <h5 class="card-title">Group Bookings</h5>
+                        <p class="card-text">Perfect for tournaments, corporate events, and golf outings.</p>
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="mt-4">
-            <a href="{{ url_for('examples.show_examples') }}" class="btn btn-primary btn-lg me-3">
-                <i class="fas fa-eye me-2"></i>View Examples
+            <a href="#golf-courses" class="btn btn-primary btn-lg me-3">
+                <i class="fas fa-golf-ball me-2"></i>View Courses
             </a>
             <a href="{{ url_for('about') }}" class="btn btn-outline-secondary btn-lg">
                 <i class="fas fa-info-circle me-2"></i>Learn More
             </a>
+        </div>
+    </div>
+</div>
+
+<!-- Georgia Golf Courses Section -->
+<div class="container mt-5" id="golf-courses">
+    <h2 class="text-center mb-4" style="color: var(--primary-green);">
+        <i class="fas fa-golf-ball me-2"></i>Featured Golf Courses
+    </h2>
+    <p class="text-center mb-5 lead">Discover and book Georgia's most prestigious golf destinations</p>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://golf.com/wp-content/uploads/2020/04/augusta-national-12-960x540.jpg" class="card-img-top" alt="Augusta National Golf Club" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: var(--primary-green);">Augusta National Golf Club</h5>
+                    <p class="card-text">Home of the Masters Tournament, Augusta National is one of the most prestigious golf courses in the world. Known for its immaculate conditioning, stunning azaleas, and challenging layout.</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Augusta, GA</small>
+                        <span class="badge badge-warning">Premium Access</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-sm"><i class="fas fa-calendar me-1"></i>Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://www.seaisland.com/content/uploads/2022/04/Golf-Seaside-Course-13-1-1228x680.jpg" class="card-img-top" alt="Sea Island Golf Club" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: var(--primary-green);">Sea Island Golf Club</h5>
+                    <p class="card-text">Located on Georgia's Golden Isles, Sea Island offers three championship courses with stunning ocean views. The Seaside Course provides an unforgettable coastal golfing experience.</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Sea Island, GA</small>
+                        <span class="text-success font-weight-bold">From $275</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-sm"><i class="fas fa-calendar me-1"></i>Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="East Lake Golf Club" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: var(--primary-green);">East Lake Golf Club</h5>
+                    <p class="card-text">Rich in history and home to the Tour Championship, East Lake Golf Club has been beautifully restored to honor Bobby Jones' legacy. Features strategic design elements.</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Atlanta, GA</small>
+                        <span class="text-success font-weight-bold">From $225</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-sm"><i class="fas fa-calendar me-1"></i>Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="https://www.lanierislandsgolf.com/wp-content/uploads/sites/8576/2022/08/1858-10f451fb2a7a5e0fd7fe5b46bdc8a7ea.jpg" class="card-img-top" alt="Lanier Islands Golf Course" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: var(--primary-green);">Lanier Islands Golf Course</h5>
+                    <p class="card-text">Located on beautiful Lake Lanier, this scenic championship course offers stunning lake views and challenging play. Known for its pristine conditions and breathtaking waterfront holes.</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Buford, GA</small>
+                        <span class="text-success font-weight-bold">From $89</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-sm"><i class="fas fa-calendar me-1"></i>Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/fullset/course-photos-for-places-to-play/peachtree-golf-club-first-2619.jpg.rend.hgtvcom.966.644.suffix/1682709054969.jpeg" class="card-img-top" alt="Peachtree Golf Club" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: var(--primary-green);">Peachtree Golf Club</h5>
+                    <p class="card-text">Co-designed by Bobby Jones and Robert Trent Jones, Peachtree Golf Club is considered one of the finest courses in the Southeast. Features rolling terrain and strategic bunkering.</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Atlanta, GA</small>
+                        <span class="badge badge-warning">Members Only</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-sm"><i class="fas fa-calendar me-1"></i>Book Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -56,16 +162,16 @@
     }
     
     .btn-outline-secondary {
-        border-color: var(--gcsu-blue);
-        color: var(--gcsu-blue);
+        border-color: var(--primary-green);
+        color: var(--primary-green);
     }
     
     .btn-outline-secondary:hover {
-        background-color: var(--gcsu-blue);
-        border-color: var(--gcsu-blue);
+        background-color: var(--primary-green);
+        border-color: var(--primary-green);
         color: white;
         transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 51, 153, 0.3);
+        box-shadow: 0 4px 8px rgba(34, 139, 34, 0.4);
     }
 </style>
 

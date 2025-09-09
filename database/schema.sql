@@ -1,4 +1,4 @@
--- Database Schema for Flask Starter Kit
+-- Database Schema for Eagle Pro
 -- Run this file to create the required database structure
 
 -- Create sample_table

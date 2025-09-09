@@ -1,6 +1,6 @@
-# Flask Starter Kit
+# Eagle Pro
 
-This is a Flask starter kit with basic structure and tooling for web application development.
+Eagle Pro is a professional business platform with comprehensive data management and analytics capabilities built on Flask.
 
 ## Project Structure
 As your project grows, consider adding these organizational folders:
